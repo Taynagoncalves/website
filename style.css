@@ -1,0 +1,324 @@
+body {
+    background: #8C1414;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #863c3c8e;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    transition: background-color 0.3s ease;
+}
+
+nav a {
+    color: rgb(31, 15, 15);
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 4px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        padding: 20px 0;
+    }
+
+    .menu-items.active {
+        display: flex;
+    }
+
+    .menu-items a {
+        margin: 15px 0;
+        font-size: 20px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+section {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer form input, footer form select, footer form button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+footer form button {
+    background-color: #8C1414;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+footer form button:hover {
+    background-color: #6f0f0f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #eb7676;
+}
+
+
+/*Estilos modernos para os filmes*/
+
+    #filmes-EM-CARTAZ {
+        padding: 40px;
+        background-color: #222222;
+        color: white;
+        text-align: center;
+        
+    }
+
+    .filmes-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .filme-card {
+        background-color: #333333;
+        border-radius: 8px;
+        overflow: hidden;
+        width: 250px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+    .filme-card:hover {
+        transform: scale(1.05);
+    }
+
+    .filme-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid #8C1414;
+    }
+
+    .filme-card h3 {
+        font-size: 1.2rem;
+        margin: 10px 0;
+        font-weight: 600;
+    }
+
+    .filme-card p {
+        font-size: 1rem;
+        color: #f1f1f1;
+    }
+
+    #EMCARTAZ{
+        color: #ddd;
+
+    }
+
+    .filme-card button {
+        background-color: #8C1414;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .filme-card button:hover {
+        background-color: #6f0f0f;
+    }
+
+
+    /*Calendario*/
+.calendario-semana {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.calendario-semana th, .calendario-semana td {
+    border: 1px solid #ff0000;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 1rem;
+}
+
+.calendario-semana th {
+    background-color: #db5f69;
+    color: rgb(14, 7, 7);
+}
+
+.calendario-semana td {
+    background-color: #e49595;
+}
+
+.calendario-semana td:hover {
+    background-color: hsl(0, 73%, 49%);
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #110404;
+}
+
+.calendario-semana td br {
+    margin: 6px 0;
+}
+#calendario {
+    margin: 40px 0;
+}
+
+#pipocas {
+    color: black
+
+}
+.combo-img {
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .combo-img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .combo-item {
+    display: inline-block;
+    margin: 20px;
+  }
+
+
+  .carrossel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carrossel {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .filme {
+    min-width: 220px; /* Ajuste conforme necessário */
+    margin-right: 5px; /* Espaçamento entre as imagens */
+  }
+  
+  .filme img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .btn-prev,
+  .btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 2em;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .btn-prev {
+    left: 0;
+  }
+  
+  .btn-next {
+    right: 0;
+  }
+  

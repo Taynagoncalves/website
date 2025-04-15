@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title> CineNews </title>
+    <link rel="icon" href="popcorn.png" type="image/png">
+</head>
+<br>
+<br>
+<br>
+
+
+<body>
+    <div class="carrossel-container">
+        <button class="btn-prev"> « </button>
+        <div class="carrossel" id="carrossel">
+            <div class="filme"><img src="comotreinarseudragao.jpg" alt="Filme 1"></div>
+            <div class="filme"><img src="rei-dos-reis.jpeg" alt="Filme 2"></div>
+            <div class="filme"><img src="brancadeneve.jpg" alt="Filme 3"></div>
+            <div class="filme"><img src="liloestitch.jpg" alt="Filme 4"></div>
+            <div class="filme"><img src="deupreguiça.jpg" alt="Filme 5"></div>
+            <div class="filme"><img src="mine.jpg" alt="Filme 6"></div>
+            <div class="filme"><img src="elio.jpeg" alt="Filme 7"></div>
+            <div class="filme"><img src="mickey17.jpg" alt="Filme 8"></div>
+            <div class="filme"><img src="flow.jpg" alt="Filme 9"></div>
+            <div class="filme"><img src="resgate.jpeg" alt="Filme 10"></div>
+            <div class="filme"><img src="lobsomen.jpg" alt="Filme 11"></div>
+            <div class="filme"><img src="macaco.jpg" alt="Filme 12"></div>
+        </div>
+        <button class="btn-next"> » </button>
+    </div>
+
+    <!-- MENU -->
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()"> ☰ </div>
+        <div class="menu-items">
+            <a href="#contato">Contato</a>
+            <a href="#comprar-ingressos">Comprar Ingressos</a>
+            <a href="#filmes-EM-CARTAZ">Em cartaz</a>
+            <a href="#login">Login</a>
+            <a href="#cadastrar">Crie uma conta</a>
+            <a href="#Informacoes">Informações</a>
+        </div>
+    </nav>
+
+    <br><br><br>
+   
+    
+    <section id="calendario">
+        <h2> Horarios das Sessões </h2>
+        <table class="calendario-semana">
+            <thead>
+                <tr>
+                    <th>Segunda</th>
+                    <th>Terça</th>
+                    <th>Quarta</th>
+                    <th>Quinta</th>
+                    <th>Sexta</th>
+                    <th>Sábado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        10:00 - Capitão América<br>
+                        12:00 - Branca de Neve<br>
+                        14:00 - Minecraft<br>
+                    </td>
+                    <td>
+                        11:00 - Deu Preguiça<br>
+                        13:00 - Capitão América<br>
+                        16:00 - Branca de Neve<br>
+                    </td>
+                    <td>
+                        10:30 - Minecraft<br>
+                        13:30 - Deu Preguiça<br>
+                        15:35 - Capitão América<br>
+                    </td>
+                    <td>
+                        09:30 - Branca de Neve<br>
+                        11:30 - Minecraft<br>
+                        16:40 - Capitão América<br>
+                    </td>
+                    <td>
+                        12:30 - Deu Preguiça<br>
+                        16:45 - Capitão América<br>
+                        21:50 - Branca de Neve<br>
+                    </td>
+                    <td>
+                        11:00 - Minecraft<br>
+                        23:10 - Deu Preguiça<br>
+                        21:50 - Capitão América<br>
+                    </td>
+                    <td>
+                        10:00 - Branca de Neve<br>
+                        13:50 - Minecraft<br>
+                        15:30 - Deu Preguiça<br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- LOGIN -->
+    <section id="login">
+        <footer>
+            <h2>LOGIN</h2>
+            <form>
+                <label for="usuario">Usuário</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Digite o nome de Usuário">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" required placeholder="Digite sua">
+                <br>
+                <button type="reset">Entrar</button>
+            </form>
+        </footer>
+    </section>
+
+    <!-- CADASTRAR -->
+    <section id="cadastrar">
+        <div class="form-container">
+            <h4>Não tem uma conta? Crie uma abaixo:</h4>
+            <h2>CADASTRE-SE</h2>
+            <form>
+                <div class="input-group">
+                    <label for="name">Nome Completo:</label>
+                    <input type="text" id="name" name="name" required placeholder="Digite seu nome completo">
+                </div>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu email">
+                </div>
+                <div class="input-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="Digite seu telefone">
+                </div>
+                <div class="input-group">
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+                <button type="reset">CADASTRAR</button>
+            </form>
+        </div>
+    </section>
+
+ 
+    <section id="filmes-EM-CARTAZ"> 
+        <h1 id="EMCARTAZ"> EM CARTAZ </h1>
+
+        <!-- FILMES E TRAILER  -->
+        <div class="filmes-container">
+            <div class="filme-card">
+                <img src="https://gsobmidia.com.br/uploads/filmes/3218/81fd4d1c-ac17-427c-b586-9473798ab5f0_1738862185.jpg" alt="Capitão América: Admirável Mundo Novo">
+                <h3>Capitão América: Admirável Mundo Novo</h3>
+                <p>Aventura, Ação</p>
+                <button onclick="window.location.href='https://www.youtube.com/embed/U7JG6FMoEdM'">Assistir Trailer</button>
+            </div>
+            <div class="filme-card">
+                <img src="https://gsobmidia.com.br/uploads/filmes/3299/6dd6b08b-07bb-4587-886c-02d63c4a8864_1741875054.jpg" alt="A Branca de Neve">
+                <h3>A Branca de Neve</h3>
+                <p>Fantasia, Família</p>
+                <button onclick="window.location.href='https://www.youtube.com/embed/X3o9GyKda1k'">Assistir Trailer</button>
+            </div>
+            <div class="filme-card">
+                <img src="https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/11/20/1973597620-minecraftthemoviever3xlg.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>Aventura, Fantasia</p>
+                <button onclick="window.location.href='https://www.youtube.com/embed/8B1EtVPBSMw'">Assistir Trailer</button>
+            </div>
+            <div class="filme-card">
+                <img src="https://gsobmidia.com.br/uploads/filmes/3305/927e7d70-654e-4161-8caf-f8bbffc1c147_1742482141.jpg" alt="Deu Preguiça">
+                <h3>Deu Preguiça</h3>
+                <p>Comédia, Aventura</p>
+                <button onclick="window.location.href='https://www.youtube.com/embed/MkS3qzC13uQ'">Assistir Trailer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela de Informações -->
+    <section id="Informacoes">
+        <div class="table-container">
+            <h2>Informações dos Filmes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filmes</th>
+                        <th>Tempo</th>
+                        <th>Nota</th>
+                        <th>Sessões</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Capitão América</td>
+                        <td>1h 30min</td>
+                        <td>10</td>
+                        <td>10 Sessões</td>
+                    </tr>
+                    <tr>
+                        <td>Branca de Neve</td>
+                        <td>2h</td>
+                        <td>9.9</td>
+                        <td>9 Sessões</td>
+                    </tr>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td>1h 30min</td>
+                        <td>10</td>
+                        <td>5 Sessões</td>
+                    </tr>
+                    <tr>
+                        <td>Deu Preguiça</td>
+                        <td>1h 50min</td>
+                        <td>5</td>
+                        <td>2 Sessões</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <br>
+    <!-- COMPRAR INGRESSOS -->
+    <section id="comprar-ingressos">
+        <h2>Compre seu ingresso nos links abaixo.</h2>
+        <ul>
+            <li><a href="https://www.cineflix.com.br/" target="_blank">CINE FLIX</a></li>
+            <li><a href="https://www.cinemark.com.br/" target="_blank">CINE MARK</a></li>
+        </ul>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para mais informações.</p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu Email">
+            <br>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" required placeholder="Digite seu motivo de contato."></textarea>
+            <br>
+            <button type="">Enviar</button>
+        </form>
+    </section>
+    <br>
+    <script src="script.js"></script>
+</body>
+</html>
