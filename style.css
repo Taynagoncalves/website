@@ -1,5 +1,5 @@
 body {
-    background: #8C1414;
+    background: image(images.jpg)
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -8,8 +8,8 @@ body {
 
 /* Estilo do menu */
 nav {
-    background-color: #863c3c8e;
-    padding: 15px;
+    background-color: transparent;
+    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -143,6 +143,47 @@ table tr:hover {
     background-color: #eb7676;
 }
 
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #333;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #eb7676;
+}
+
+/* Estilo para as estrelas */
+.stars {
+    font-size: 1.5rem;
+    color: #ffcc00; /* Cor das estrelas */
+}
+
+.stars::before {
+    content: "★"; /* Estrela cheia */
+}
+
+.stars {
+    color: #ffcc00;
+}
+
+.stars span {
+    margin-right: 3px;
+}
+
 
 /*Estilos modernos para os filmes*/
 
@@ -221,7 +262,7 @@ table tr:hover {
 }
 
 .calendario-semana th, .calendario-semana td {
-    border: 1px solid #ff0000;
+    border: 1px solid #160e0ec4;
     padding: 10px;
     text-align: center;
     vertical-align: top;
@@ -229,16 +270,16 @@ table tr:hover {
 }
 
 .calendario-semana th {
-    background-color: #db5f69;
+    background-color: #ffffff9a;
     color: rgb(14, 7, 7);
 }
 
 .calendario-semana td {
-    background-color: #e49595;
+    background-color: #ceb1b1;
 }
 
 .calendario-semana td:hover {
-    background-color: hsl(0, 73%, 49%);
+    background-color: hsla(184, 69%, 55%, 0.329);
 }
 
 h2 {
@@ -251,23 +292,11 @@ h2 {
 .calendario-semana td br {
     margin: 6px 0;
 }
+
 #calendario {
     margin: 40px 0;
 }
 
-#pipocas {
-    color: black
-
-}
-.combo-img {
-    transition: transform 0.3s ease;
-    border-radius: 10px;
-  }
-
-  .combo-img:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  }
 
   section {
     text-align: center;
@@ -290,8 +319,8 @@ h2 {
   }
   
   .filme {
-    min-width: 220px; /* Ajuste conforme necessário */
-    margin-right: 5px; /* Espaçamento entre as imagens */
+    min-width: 220px; 
+    margin-right: 5px; 
   }
   
   .filme img {
